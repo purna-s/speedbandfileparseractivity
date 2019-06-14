@@ -118,8 +118,8 @@ func (a *XMLParserActivity) Eval(ctx activity.Context) (done bool, err error) {
 		fmt.Println(string(jsonData))
 	}*/
 	// Set the output as part of the context
-	activityLog.Debugf("Activity has parsed SpeedBand XML Successfully")
-	fmt.Println("Activity has parsed SpeedBand XML Successfully")
+	activityLog.Debugf("Activity has parsed SpeedBand file content Successfully")
+	fmt.Println("Activity has parsed SpeedBand file content Successfully")
 
 	ctx.SetOutput("output", string(jsonData))
 
